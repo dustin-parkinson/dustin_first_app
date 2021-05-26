@@ -16,3 +16,6 @@ dataframe = pd.DataFrame(
     np.random.randn(10, 20),
     columns=('col %d' % i for i in range(20)))
 st.table(dataframe)
+
+x = st.slider('x')  # 👈 this is a widget
+st.write(x, 'squared is', x * x)
