@@ -1,16 +1,14 @@
 import streamlit as st
-import numpy as np
-import pandas as pd
+import time
 
-import streamlit as st
+@st.cache(suppress_st_warning=True)
+def expensive_computation(a, b):
+    st.write("Cache miss: expensive_computation(", a, ",", b, ") ran")
+    time.sleep(2)  # This makes the function take 2s to run
+    return a * b
 
-left_column, right_column = st.beta_columns(2)
-# You can use a column just like st.sidebar:
-left_column.button('Press me!')
+a = 2
+b = 210  # 👈 Changed this
+res = expensive_computation(a, b)
 
-# Or even better, call Streamlit functions inside a "with" block:
-with right_column:
-    chosen = st.radio(
-        'Sorting hat',
-        ("Gryffindor", "Ravenclaw", "Hufflepuff", "Slytherin"))
-    st.write(f"You are in {chosen} house!")
+st.write("Result:", res)
