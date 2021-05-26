@@ -1,22 +1,18 @@
-progress_bar = st.progress(0)
-status_text = st.empty()
-chart = st.line_chart(np.random.randn(10, 2))
+import streamlit as st
+import numpy as np
+import time
 
-for i in range(100):
-    # Update progress bar.
-    progress_bar.progress(i + 1)
+# Get some data.
+data = np.random.randn(10, 2)
 
-    new_rows = np.random.randn(10, 2)
+# Show the data as a chart.
+chart = st.line_chart(data)
 
-    # Update status text.
-    status_text.text(
-        'The latest random number is: %s' % new_rows[-1, 1])
+# Wait 1 second, so the change is clearer.
+time.sleep(1)
 
-    # Append data to the chart.
-    chart.add_rows(new_rows)
+# Grab some more data.
+data2 = np.random.randn(10, 2)
 
-    # Pretend we're doing some computation that takes time.
-    time.sleep(0.1)
-
-status_text.text('Done!')
-st.balloons()
+# Append the new data to the existing chart.
+chart.add_rows(data2)
