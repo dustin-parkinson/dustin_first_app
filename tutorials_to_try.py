@@ -1,14 +1,22 @@
-import streamlit as st
-import time
+progress_bar = st.progress(0)
+status_text = st.empty()
+chart = st.line_chart(np.random.randn(10, 2))
 
-@st.cache(suppress_st_warning=True)
-def expensive_computation(a, b):
-    st.write("Cache miss: expensive_computation(", a, ",", b, ") ran")
-    time.sleep(2)  # This makes the function take 2s to run
-    return a * b
+for i in range(100):
+    # Update progress bar.
+    progress_bar.progress(i + 1)
 
-a = 2
-b = 210  # 👈 Changed this
-res = expensive_computation(a, b)
+    new_rows = np.random.randn(10, 2)
 
-st.write("Result:", res)
+    # Update status text.
+    status_text.text(
+        'The latest random number is: %s' % new_rows[-1, 1])
+
+    # Append data to the chart.
+    chart.add_rows(new_rows)
+
+    # Pretend we're doing some computation that takes time.
+    time.sleep(0.1)
+
+status_text.text('Done!')
+st.balloons()
