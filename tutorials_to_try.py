@@ -4,7 +4,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 st.title('Hello World, I like to party. Do you really?')
-
+st.title('another title')
 
 df = pd.DataFrame({
   'first column': [1, 2, 3, 4],
