@@ -10,5 +10,5 @@ st.image('https://streamlit.io/images/brand/streamlit-logo-primary-colormark-dar
 st.empty()
 st.header('This is the FIGS Logo')         
 st.image(
-'https://www.wearfigs.com/')
+'https://www.criteo.com/wp-content/uploads/2020/01/ss-logo-FIGS-min.png')
 
