@@ -17,7 +17,7 @@ data2 = np.random.randn(10, 2)
 # Append the new data to the existing chart.
 chart.add_rows(data2)
 
-
+st.title("Hi I'm Dustin")
 
 # Draw a title and some text to the app:
 '''
