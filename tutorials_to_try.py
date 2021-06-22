@@ -4,7 +4,7 @@ import time
 
 st.title('Check out this sweet Demo!')
 
-Streamlit
+
 st.image('https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png')
 
          
