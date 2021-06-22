@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title('Streamlit+KeenFootware')
 
-st.text('This is just some text'
+st.text('This is just some text')
 
 st.image('https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png')
 
