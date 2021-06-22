@@ -8,7 +8,7 @@ st.header('This is the Streamlit Logo')
 st.image('https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png')
 
 st.empty()
-st.header('This is the Keens Footware Logo')         
+st.header('This is the Keen Footware Logo')         
 st.image(
 'https://www.keenfootwear.com/on/demandware.static/-/Library-Sites-keen_shared/default/dwba71f1df/meta/keenlogofb.png')
 
