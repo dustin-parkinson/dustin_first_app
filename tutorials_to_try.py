@@ -8,7 +8,7 @@ st.header('This is the Streamlit Logo. it is kinda cool')
 st.image('https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png')
 
 st.empty()
-st.header('This is the FIGS Logo. it is even cool!!!')         
+st.header('We do not care so much about this logo')         
 st.image(
 'https://www.criteo.com/wp-content/uploads/2020/01/ss-logo-FIGS-min.png')
 
