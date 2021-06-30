@@ -9,6 +9,5 @@ st.image('https://streamlit.io/images/brand/streamlit-logo-primary-colormark-dar
 
 st.empty()
 st.header('This is a great logo!')         
-st.image(
-'https://www.criteo.com/wp-content/uploads/2020/01/ss-logo-FIGS-min.png')
+
 
