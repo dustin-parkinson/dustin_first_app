@@ -8,7 +8,7 @@ st.header('This is the Streamlit Logo. it is kinda cool')
 st.image('https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png')
 
 st.empty()
-st.header('This is a great logo!')
-st.header('But there is not a logo here, what the heck?')
+st.header('Dustin writes an app!')
+st.header('But is it a good app?')
 
 
