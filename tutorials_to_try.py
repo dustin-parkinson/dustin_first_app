@@ -9,7 +9,7 @@ st.image('https://streamlit.io/images/brand/streamlit-logo-primary-colormark-dar
 
 st.empty()
 st.header('What is this')
-st.header('what sort of apps can you make')
+st.header('This is an app, tell tray hi!')
 
 
 
