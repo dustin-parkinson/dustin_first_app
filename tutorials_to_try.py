@@ -1,8 +1,8 @@
 import streamlit as st
 
-st.title('Streamlit+Aisle')
+st.title('Streamlit')
 
-st.text('This is to show you easy it is to change text')
+st.text('This is an example of a text box')
 
 st.header('This is the Streamlit Logo. it is kinda cool')
 st.image('https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png')
